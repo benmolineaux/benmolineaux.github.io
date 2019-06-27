@@ -84,6 +84,84 @@
         <li>1914	M. Manquilef <a href="https://benmolineaux.github.io/bookshelf/bonus-texts/manquilef2/"><em>Comentarios del Pueblo Araucano II</em></a></li>
         <li>1925	F. de Augusta	<a href="https://benmolineaux.github.io/bookshelf/bonus-texts/vademecum/"><em>kiñéwn amuaiyu Vade Mecum!</em></a></li>
 </ul>
+        
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Corpus encoding</h3> 
+        <p>As the objective of the corpus is to provide a view into the synchrony and diachrony of lexical, morphological and phonological features, texts are being parsed at all three of these levels. The first stage of this process --- lemmatisation --- identifies the key root-elements, as well as the part-of-speech (POS) category for each word, providing a single identifiable label and reducing both morphological and spelling heterogeneity (see 1).</p>  
+
+        <p>(1)</p><table style="width:75%">
+  <tr>
+    <th></th>
+    <th>Form</th>
+    <th>Lemma</th> 
+    <th>Transl.</th>
+    <th>POS</th>
+  </tr>
+  <tr>
+    <td>a.</td>
+    <td>kude-kefuingu</td>
+    <td>kuden</td>
+    <td>&#39to play&#39</td>
+    <td>V</td>
+  </tr>
+  <tr>
+    <td>b.</td>
+   <td>kuthe-kalape</td>
+    <td>kuden</td>
+    <td>&#39to play&#39</td>
+    <td>V</td>
+  </tr>
+</table>
+
+        <p>XML</p><table style="width:75%">
+  <tr>
+    <td>a.</td>
+    <td>&ltw xml:lang=&quotarn&quot lemma=&quotkuden&quot pos=&quotV&quot corresp=&quotplay&quot&gtkudekefuingu&lt/w&gt&lt/td&gt
+  </tr>
+  <tr>
+    <td>b.</td>
+   <td>&ltw xml:lang=&quotarn&quot lemma=&quotkuden&quot pos=&quotV&quot corresp=&quotplay&quot&gtkuthekalape&lt/w&gt&lt/td&gt
+    <td>kuden</td>
+    <td>'to play'</td>
+    <td>V</td>
+  </tr>
+</table>
+
+
+<p>The second stage is morphological parsing, which identifies individual morphemes beyond the root and labels them according to function (as in 2). The result of both these processes is a TEI-standard XML text with the relevant tags embedded. A full 10% of the total word-types in the corpus texts is soon to be completed, after which an AI algorithm, developed at the University of Edinburgh's NLP Group, will be trained to tag the remainder of the material both at the level of the lemma and the morpheme. Additional hand corrections will be necessary in order to complete the process.</p>
+
+<!--\begin{table}[h]
+\begin{tabular}{llllllccc}
+(2)&&\textsc{Form}&&\textsc{Morphemes}&\\
+& a.&$\langle$kude-ke-fu-ingu$\rangle$& { } &\textsc{root}(play)-\textsc{habit-broken.implicature-ind.3.dual}&\\
+&b.&$\langle$kuthe-ka-la-pe$\rangle$& { } &\textsc{root}(play)-\textsc{cont-neg-imp.3.sg}&\\
+\\
+&&XML&\\
+&a.&\multicolumn{5}{l}{<w><m baseForm=``kude" type=``root" corresp=``play">kude</m><m baseForm=``ke"}\\ &&\multicolumn{5}{l}{type=``habit">ke</m><m baseForm=``fu" type=``BI">fu</m><m baseForm=``ingu"}\\
+&&\multicolumn{5}{l}{type=``ind.3.d">ingu</m></w>}\\
+&b.&\multicolumn{5}{l}{<w><m baseForm=``kude" type=``root" corresp=``play">kude</m><m baseForm=``ka"}\\
+&&\multicolumn{5}{l}{type=``cont">ke</m><m baseForm=``la" type=``neg">la</m><m baseForm=``pe"}\\
+&&\multicolumn{5}{l}{type=``imp.3.sg">pe</m></w>}\\
+%&&play-\textsc{cont-neg-imp.3.sg}&\\ 
+\end{tabular}
+\end{table}
+
+The final stage of the tagging will be grapho-phonological parsing \citep{Kopaczyk18}, which entails providing sound values for each word (as in 3), following a list of spelling-based rules for each text. The results should effectively reconstruct the phonic structure of each text, such that it can be compared with others from different periods and locations, helping to map phonological change from the bottom up.
+
+\begin{table}[h]
+\begin{tabular}{lllllllll}
+(3)&&\textsc{Form}&&\textsc{Sound}&\textsc{Lemma}&\textsc{Transl.}&\textsc{Source}&\textsc{Dialect}\\
+& a.&$\langle$vúta$\rangle$& { } &{[}vɨta{]}&fücha&`old/big'&\cite{Valdivia}&North\\
+&b.&$\langle$fücha$\rangle$& { } &{[}fɨʧa{]}&fücha&`old/big'&\cite{Augustadic}&Central/Coast\\
+\\
+&&XML\\
+& a.&\multicolumn{7}{l}{<m><c ipa=``v">v</c><c ipa=``ɨ">ú</c><c ipa=``t">t</c><c ipa=``a">a</c></m>}\\
+&b.&\multicolumn{7}{l}{<m><c ipa=``f">f</c><c ipa=``ɨ">ü</c><c ipa=``ʧ">ch</c><c ipa=``a">a</c></m>}\\
+
+\end{tabular}
+\end{table}
+
+The front end of the corpus --- soon to be available in beta form --- will provide search options (in both English and Spanish) at all three levels of tagging (word, morpheme and sound), as well as allowing users to correlate these features across texts and with relevant non-linguistic metadata such as date, location, author, genre, etc. A simpler browser version will also be available for non-linguists, allowing for texts to be browsed and downloaded with parallel translations. -->
         <p> The careful transcription and tagging of the historical material that is proposed for this project follows a long tradition at the Angus McIntosh Centre, working mostly on early English and Scots. The importance of these methods, however were not lost to some of the more prominent Mapudungun scholars, as evidenced in the following passage by Dr. Rudolf Lenz, who conducted some of the earliest explicitly academic studies of the language </p>
         <blockquote> Aun el lenguaje vulgar que no tiene ninguna lengua literaria al lado puede ser una cosa mucho ménos determinada de lo que comunmente se cree, i no siempre podrá justificarse que en la edicion filolójica de un testo de siglos pasados se uniforme la ortografia del autor en todos los casos. Cuando la ortografía vacila en lenguas que se escriben poco, esto puede espresar el empleo de diferentes pronunciaciones en una misma palabra, o puede tener la causa de que ninguna de las diferentes maneras de escribir corresponda bien a la pronunciacion. Mucho mas raro será que el autor se haya simplemente equivocada al escribir lo que pronunciaba.
         </blockquote> 
