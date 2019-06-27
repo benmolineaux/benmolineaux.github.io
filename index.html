@@ -89,7 +89,7 @@
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Corpus encoding</h3> 
         <p>As the objective of the corpus is to provide a view into the synchrony and diachrony of lexical, morphological and phonological features, texts are being parsed at all three of these levels. The first stage of this process --- lemmatisation --- identifies the key root-elements, as well as the part-of-speech (POS) category for each word, providing a single identifiable label and reducing both morphological and spelling heterogeneity (see 1).</p>  
 
-        <p>(1)</p><table style="width:75%">
+        <p>(1)</p><table style="width:100%">
   <tr>
     <th></th>
     <th>Form</th>
@@ -113,21 +113,39 @@
   </tr>
 </table>
 
-        <p>XML</p><table style="width:75%">
+        <p>XML</p><table style="width:100%">
   <tr>
     <td>a.</td>
-    <td>&ltw xml:lang=&quotarn&quot lemma=&quotkuden&quot pos=&quotV&quot corresp=&quotplay&quot&gtkudekefuingu&lt/w&gt&lt/td&gt
+    <td>&ltw xml:lang=&quotarn&quot lemma=&quotkuden&quot pos=&quotV&quot corresp=&quotplay&quot&gtkudekefuingu&lt/w&gt</td>
   </tr>
   <tr>
     <td>b.</td>
-   <td>&ltw xml:lang=&quotarn&quot lemma=&quotkuden&quot pos=&quotV&quot corresp=&quotplay&quot&gtkuthekalape&lt/w&gt&lt/td&gt
+   <td>&ltw xml:lang=&quotarn&quot lemma=&quotkuden&quot pos=&quotV&quot corresp=&quotplay&quot&gtkuthekalape&lt/w&gt</td>
   </tr>
 </table>
 
 
 <p>The second stage is morphological parsing, which identifies individual morphemes beyond the root and labels them according to function (as in 2). The result of both these processes is a TEI-standard XML text with the relevant tags embedded. A full 10% of the total word-types in the corpus texts is soon to be completed, after which an AI algorithm, developed at the University of Edinburgh's NLP Group, will be trained to tag the remainder of the material both at the level of the lemma and the morpheme. Additional hand corrections will be necessary in order to complete the process.</p>
 
-<!--\begin{table}[h]
+<p>(1)</p><table style="width:100%">
+  <tr>
+    <th></th>
+    <th>Form</th>
+    <th>Morphemes</th> 
+  </tr>
+  <tr>
+    <td>a.</td>
+    <td>kude-ke-fu-ingu</td>
+    <td>ROOT(play)-HABIT-BROKEN.IMPLICATURE-IND.3.DUAL</td>
+  </tr>
+  <tr>
+    <td>b.</td>
+   <td>kuthe-ka-la-pe</td>
+    <td>ROOT(play)-CONT-NEG-IMP.3.SG</td>
+  </tr>
+</table>
+        
+        <!--\begin{table}[h]
 \begin{tabular}{llllllccc}
 (2)&&\textsc{Form}&&\textsc{Morphemes}&\\
 & a.&$\langle$kude-ke-fu-ingu$\rangle$& { } &\textsc{root}(play)-\textsc{habit-broken.implicature-ind.3.dual}&\\
